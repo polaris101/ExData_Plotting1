@@ -23,6 +23,6 @@ plot4<-function(){
     plot(subdata$Time, subdata$Global_reactive_power, type="l", xlab="datetime", ylab="Global_reactive_power", yaxt="n")
     axis(2,at=c(0.0,0.1,0.2,0.3,0.4,0.5),labels=c("0.0","0.1","0.2","0.3","0.4","0.5"))
 
-    dev.copy(png, file="plot4.png")
+    dev.copy(png, file="plot4.png", width=480, height=480)
     dev.off()
 }

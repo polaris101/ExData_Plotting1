@@ -6,6 +6,6 @@ plot2<-function(){
     par(mar=c(5.1,4.1,4.1,2.1))
     Sys.setlocale("LC_TIME","English")
     plot(subdata$Time,subdata$Global_active_power,type="l",xlab="",ylab="Global Active Power(kilowatts)")    
-    dev.copy(png, file="plot2.png")
+    dev.copy(png, file="plot2.png", width=480, height=480)
     dev.off()
 }
